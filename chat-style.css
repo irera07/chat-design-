@@ -1,0 +1,274 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Rubik';
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(204, 202, 202);
+    margin: 0;
+}
+.main-container{
+    display: flex;
+    width: 100%;
+    height: 100%; 
+}
+.purple-container{
+    display: flex;
+    background-image: linear-gradient(hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+    width: 50%;
+    height: 73vh;
+    border-radius: 0 0 100% 0;
+}
+.white-container{
+    display: flex;
+    width: 50%;
+    height: 125vh;
+    position: relative;
+}
+.phone-container{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    left: -80%;
+    right: 20%;
+    margin-bottom: 100px;
+}
+.screen{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+    background-color: white;
+    border-radius: 20px;
+}
+.header{
+    background-image: linear-gradient(to right, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+    border-radius: 20px 20px 5px 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.top-header{
+    background-color: white;
+    width: 50%;
+    height: 20px;
+    border-radius: 10px;
+    position: absolute;
+    top: -10px;
+}
+.header-detail{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    margin-top: 10px;
+    height: 70px;
+}
+button{
+    background-color: transparent;
+    color: white;
+    border: 0;
+    font-size: 24px;
+}
+.user-info{
+    display: flex;
+    height: 40px;
+    width: 80%;
+    gap: 15px;
+}
+.user-info img{
+    height: 100%;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+.user-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.name{
+    font-size: 16px;
+}
+.status{
+    color: hsl(276, 100%, 81%);
+}
+p{
+    margin: 0;
+    font-size: 10px;
+}
+h1{
+    margin: 0;
+}
+.chat-container{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+    background-color: #ccc;
+}
+.left-message{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    
+    gap: 10px;
+}
+.message-left{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: hsl(276, 55%, 52%);
+}
+.right-message-1{
+    display: flex;
+    flex-direction: column;
+    align-self:self-end;
+    gap: 10px;
+    width: 70%;
+    
+}
+.message-right{
+    border-radius: 10px;
+    background-color: hsl(271, 15%, 43%);
+    padding: 10px;
+}
+.image-gallery{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    gap: 10px;
+}
+.image-gallery img{
+    width: 60px;
+    border-radius: 20px;
+}
+.right-message-2{
+    display: flex;
+    flex-direction: column;
+    align-self:self-end;
+    gap: 10px;
+    width: 70%;
+}
+.right-message-2 p{
+    border-radius: 10px;
+    background-color: hsl(271, 15%, 43%);
+    padding: 10px;
+    font-size: 15px;
+}
+.option-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    background-color: #ccc;
+}
+.option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px 10px 10px;
+    height: 50px;
+    width: 80%;
+    border-radius: 20px;
+    background-image: linear-gradient(to right, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+    color: white;
+}
+.option label {
+    display: flex;
+    align-items: center;
+    color: hsl(289, 100%, 72%);
+    gap: 10px;
+    cursor: pointer;
+}
+.option span {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    color: white;
+    font-weight: 600;
+}
+.input-area {
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #eee;
+    background-color: #ccc;
+    border-radius: 0 0 20px 20px;
+}
+
+.input-area input {
+    border: none;
+    border-radius: 20px;
+    height: 50px;
+    width: 80%;
+    margin-right: 10px;
+    font-size: 18px;
+    background-color: white;
+    padding-left: 10px;
+}
+
+.send-button {
+    background: hsl(271, 36%, 24%);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.detail-container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 70px;
+}
+.detail-container h1{
+    color: hsl(271, 36%, 24%);
+    font-size: 50px;
+}
+.detail-container p{
+    color: hsl(270, 7%, 64%);
+    font-size: 20px;
+    text-align: center;
+}
+@media (min-width: 600px){
+    .purple-container{
+        width: 30%;
+        height: 190vh;
+        border-radius: 0 0 300px 150px;
+    }
+    .white-container{
+        height: 200vh;
+    }
+    .phone-container{
+        flex-direction: row;
+        top: 200px;
+        left: -15%;
+        right: 20%;
+        gap: 100px;
+        margin: 0;
+        width: 120%;
+    }
+    .screen{
+        width: 200%;
+    }
+    .detail-container{
+        justify-content: center;
+        width: 200%;
+        margin: 0;
+    }
+    .detail-container h1{
+        font-size: 30px;
+    }
+    .detail-container p{
+        text-align: left;
+        font-size: 11px;
+    }
+}
